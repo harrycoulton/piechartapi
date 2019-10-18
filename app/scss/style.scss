@@ -1,0 +1,18 @@
+$blue: #0000ff;
+$bigSq: 1000px; 
+
+body {
+  background: $blue;
+  color: red; 
+    div {
+        background: white; 
+        width: $bigSq;
+        height: $bigSq;
+    } 
+}
+
+g {
+    background: none;
+    stroke: black; 
+    stroke-width: 4;
+}

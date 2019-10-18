@@ -1,0 +1,50 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box ;
+  margin: 0;
+}
+
+body {
+position: relative;
+}
+
+.pattern {
+  height: 97vh; 
+  width: 99vw; 
+}
+
+.loading {
+  color: black; 
+  position: absolute; 
+  top: 200px;
+  left: 400px; 
+  background: rgba(255, 255, 255, 0.4); 
+  font-size: 3rem; 
+  display: none; 
+  padding: 50px; 
+  border-radius: 50px;
+}
+
+.path {
+  fill:  rgba(183, 164, 66, 0.804); 
+  fill-opacity: 0;
+  font-size: 4rem;  
+  stroke:  rgba(50, 97, 16, 0.285); 
+  stroke-width: 1; 
+  stroke-dasharray: 550;
+  stroke-dashoffset: 551;
+  animation: dash 1s linear, fill 1.5s linear; 
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  to {
+    fill-opacity: 1; 
+  }
+}
